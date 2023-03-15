@@ -37,8 +37,8 @@ function animatePress(currentColor) {
 
 function checkAnswer() {
     let last = userClickedPattern.length-1;
-    if(userClickedPattern[last] == gamePattern[last]) {
-        if(last == level-1) {
+    if(userClickedPattern[last] === gamePattern[last]) {
+        if(last === level-1) {
             setTimeout(function() {
                 userClickedPattern = [];
                 nextSequence();
